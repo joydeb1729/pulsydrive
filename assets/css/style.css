@@ -1039,3 +1039,209 @@ span.feature-review {margin-left: 10px;}
     100%  {bottom:7px;}
 }
 /*========================Thank you=================
+
+/*-------------------------------------
+        Compare Models Section
+--------------------------------------*/
+.compare-models {
+    padding: 80px 0;
+    background: #f9f9f9;
+}
+
+.models-scroll-container {
+    position: relative;
+    width: 100%;
+    overflow: visible;
+    padding: 20px 40px;
+}
+
+.models-scroll-wrapper {
+    display: flex;
+    gap: 30px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 20px 10px;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    position: relative;
+}
+
+.models-scroll-wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+.model-card {
+    flex: 0 0 300px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.model-card:hover {
+    transform: translateY(-5px);
+}
+
+.model-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    padding: 5px 15px;
+    border-radius: 20px;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    z-index: 2;
+}
+
+.model-badge.popular { background: #ff6b6b; }
+.model-badge.premium { background: #4ecdc4; }
+.model-badge.eco { background: #45b7d1; }
+.model-badge.custom { background: #96ceb4; }
+
+.model-image {
+    height: 200px;
+    overflow: hidden;
+    border-radius: 15px 15px 0 0;
+}
+
+.model-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.model-content {
+    padding: 20px;
+}
+
+.model-content h3 {
+    margin: 0 0 10px;
+    font-size: 24px;
+    color: #333;
+}
+
+.model-price {
+    font-size: 20px;
+    color: #ff6b6b;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.model-features {
+    margin-bottom: 20px;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    color: #666;
+}
+
+.feature-item i {
+    margin-right: 10px;
+    color: #4ecdc4;
+    width: 20px;
+}
+
+.scroll-navigation {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    pointer-events: none;
+    z-index: 10;
+}
+
+.scroll-btn {
+    width: 50px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+    font-size: 24px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    pointer-events: auto;
+    border: none;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: relative;
+}
+
+.scroll-btn.prev-btn {
+    left: -25px;
+}
+
+.scroll-btn.next-btn {
+    right: -25px;
+}
+
+.scroll-btn:hover {
+    background: #fff;
+    color: #e99c2e;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Responsive adjustments for scroll navigation */
+@media (max-width: 768px) {
+    .scroll-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+    }
+
+    .scroll-btn.prev-btn {
+        left: -20px;
+    }
+
+    .scroll-btn.next-btn {
+        right: -20px;
+    }
+
+    .models-scroll-container {
+        padding: 20px 30px;
+    }
+}
+
+.model-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.model-buttons .btn-cart {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.model-buttons .welcome-more-info {
+    background: transparent;
+    color: #e99c2e;
+    border: 1px solid #e99c2e;
+}
+
+.model-buttons .welcome-more-info:hover {
+    background: #e99c2e;
+    color: #fff;
+}
+
+/* Responsive adjustments for model buttons */
+@media (max-width: 768px) {
+    .model-buttons {
+        flex-direction: column;
+    }
+    
+    .model-buttons .btn-cart {
+        width: 100%;
+    }
+}
