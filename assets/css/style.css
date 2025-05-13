@@ -1046,13 +1046,14 @@ span.feature-review {margin-left: 10px;}
 .compare-models {
     padding: 80px 0;
     background: #f9f9f9;
+    overflow: hidden;
 }
 
 .models-scroll-container {
     position: relative;
     width: 100%;
-    overflow: visible;
     padding: 20px 40px;
+    margin: 0 auto;
 }
 
 .models-scroll-wrapper {
@@ -1064,6 +1065,7 @@ span.feature-review {margin-left: 10px;}
     -ms-overflow-style: none;
     scrollbar-width: none;
     position: relative;
+    margin: 0 -10px;
 }
 
 .models-scroll-wrapper::-webkit-scrollbar {
@@ -1077,6 +1079,7 @@ span.feature-review {margin-left: 10px;}
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     position: relative;
     transition: transform 0.3s ease;
+    margin: 0 10px;
 }
 
 .model-card:hover {
@@ -1156,6 +1159,7 @@ span.feature-review {margin-left: 10px;}
     padding: 0;
     pointer-events: none;
     z-index: 10;
+    left: 0;
 }
 
 .scroll-btn {
@@ -1208,6 +1212,10 @@ span.feature-review {margin-left: 10px;}
 
     .models-scroll-container {
         padding: 20px 30px;
+    }
+
+    .model-card {
+        flex: 0 0 260px;
     }
 }
 
