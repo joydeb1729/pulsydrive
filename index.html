@@ -71,6 +71,14 @@
 				</ol><!-- /ol-->
 				<!--/.carousel-indicator -->
 
+				<!-- Carousel Navigation -->
+				<a class="carousel-control left" href="#header-carousel" data-slide="prev">
+					<i class="fa fa-angle-left"></i>
+				</a>
+				<a class="carousel-control right" href="#header-carousel" data-slide="next">
+					<i class="fa fa-angle-right"></i>
+				</a>
+
 				<!--/.carousel-inner -->
 				<div class="carousel-inner" role="listbox">
 					<!-- .item -->
@@ -335,6 +343,10 @@
 									</p>
 									<h3><a href="#">PulsyLite</a></h3>
 									<h5>$1,299.00</h5>
+									<button class="btn-cart welcome-add-cart" onclick="addToCart('PulsyLite', 1299.00)">
+										<span class="lnr lnr-plus-circle"></span>
+										add <span>to</span> cart
+									</button>
 								</div>
 							</div>
 						</div>
@@ -352,6 +364,10 @@
 									</p>
 									<h3><a href="#">PulsyGo</a></h3>
 									<h5>$1,499.00</h5>
+									<button class="btn-cart welcome-add-cart" onclick="addToCart('PulsyGo', 1499.00)">
+										<span class="lnr lnr-plus-circle"></span>
+										add <span>to</span> cart
+									</button>
 								</div>
 							</div>
 						</div>
@@ -369,6 +385,10 @@
 									</p>
 									<h3><a href="#">PulsyPro</a></h3>
 									<h5>$1,999.00</h5>
+									<button class="btn-cart welcome-add-cart" onclick="addToCart('PulsyPro', 1999.00)">
+										<span class="lnr lnr-plus-circle"></span>
+										add <span>to</span> cart
+									</button>
 								</div>
 							</div>
 						</div>
@@ -386,6 +406,10 @@
 									</p>
 									<h3><a href="#">PulsyKit</a></h3>
 									<h5>Custom Price</h5>
+									<button class="btn-cart welcome-add-cart" onclick="addToCart('PulsyKit', 0)">
+										<span class="lnr lnr-plus-circle"></span>
+										add <span>to</span> cart
+									</button>
 								</div>
 							</div>
 						</div>
@@ -431,9 +455,15 @@
 										<span>Solar Powered</span>
 									</div>
 								</div>
-								<button class="btn-cart welcome-add-cart" onclick="window.location.href='#'">
-									Learn More
-								</button>
+								<div class="model-buttons">
+									<button class="btn-cart welcome-add-cart" onclick="addToCart('PulsyLite', 1299.00)">
+										<span class="lnr lnr-plus-circle"></span>
+										add <span>to</span> cart
+									</button>
+									<button class="btn-cart welcome-add-cart welcome-more-info" onclick="window.location.href='#'">
+										learn more
+									</button>
+								</div>
 							</div>
 						</div>
 
@@ -464,9 +494,15 @@
 										<span>Easy Installation</span>
 									</div>
 								</div>
-								<button class="btn-cart welcome-add-cart" onclick="window.location.href='#'">
-									Learn More
-								</button>
+								<div class="model-buttons">
+									<button class="btn-cart welcome-add-cart" onclick="addToCart('PulsyGo', 1499.00)">
+										<span class="lnr lnr-plus-circle"></span>
+										add <span>to</span> cart
+									</button>
+									<button class="btn-cart welcome-add-cart welcome-more-info" onclick="window.location.href='#'">
+										learn more
+									</button>
+								</div>
 							</div>
 						</div>
 
@@ -497,9 +533,15 @@
 										<span>Voice Control</span>
 									</div>
 								</div>
-								<button class="btn-cart welcome-add-cart" onclick="window.location.href='#'">
-									Learn More
-								</button>
+								<div class="model-buttons">
+									<button class="btn-cart welcome-add-cart" onclick="addToCart('PulsyPro', 1999.00)">
+										<span class="lnr lnr-plus-circle"></span>
+										add <span>to</span> cart
+									</button>
+									<button class="btn-cart welcome-add-cart welcome-more-info" onclick="window.location.href='#'">
+										learn more
+									</button>
+								</div>
 							</div>
 						</div>
 
@@ -530,188 +572,45 @@
 										<span>Modular Design</span>
 									</div>
 								</div>
-								<button class="btn-cart welcome-add-cart" onclick="window.location.href='#'">
-									Learn More
-								</button>
+								<div class="model-buttons">
+									<button class="btn-cart welcome-add-cart" onclick="addToCart('PulsyKit', 0)">
+										<span class="lnr lnr-plus-circle"></span>
+										add <span>to</span> cart
+									</button>
+									<button class="btn-cart welcome-add-cart welcome-more-info" onclick="window.location.href='#'">
+										learn more
+									</button>
+								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-				<div class="scroll-indicator">
-					<i class="fa fa-chevron-left"></i>
-					<span>Scroll to compare</span>
-					<i class="fa fa-chevron-right"></i>
+					<div class="scroll-navigation">
+						<button class="scroll-btn prev-btn">
+							<i class="fa fa-angle-left"></i>
+						</button>
+						<button class="scroll-btn next-btn">
+							<i class="fa fa-angle-right"></i>
+						</button>
+					</div>
 				</div>
 			</div>
 		</section>
 		<!--compare-models end -->
 
-		<style>
-			.compare-models {
-				padding: 80px 0;
-				background: #f9f9f9;
-			}
-
-			.models-scroll-container {
-				position: relative;
-				width: 100%;
-				overflow: hidden;
-				padding: 20px 0;
-			}
-
-			.models-scroll-wrapper {
-				display: flex;
-				gap: 30px;
-				overflow-x: auto;
-				scroll-behavior: smooth;
-				padding: 20px 10px;
-				-ms-overflow-style: none;
-				scrollbar-width: none;
-			}
-
-			.models-scroll-wrapper::-webkit-scrollbar {
-				display: none;
-			}
-
-			.model-card {
-				flex: 0 0 300px;
-				background: white;
-				border-radius: 15px;
-				box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-				position: relative;
-				transition: transform 0.3s ease;
-			}
-
-			.model-card:hover {
-				transform: translateY(-5px);
-			}
-
-			.model-badge {
-				position: absolute;
-				top: 15px;
-				right: 15px;
-				padding: 5px 15px;
-				border-radius: 20px;
-				color: white;
-				font-size: 12px;
-				font-weight: bold;
-				z-index: 1;
-			}
-
-			.model-badge.popular { background: #ff6b6b; }
-			.model-badge.premium { background: #4ecdc4; }
-			.model-badge.eco { background: #45b7d1; }
-			.model-badge.custom { background: #96ceb4; }
-
-			.model-image {
-				height: 200px;
-				overflow: hidden;
-				border-radius: 15px 15px 0 0;
-			}
-
-			.model-image img {
-				width: 100%;
-				height: 100%;
-				object-fit: cover;
-			}
-
-			.model-content {
-				padding: 20px;
-			}
-
-			.model-content h3 {
-				margin: 0 0 10px;
-				font-size: 24px;
-				color: #333;
-			}
-
-			.model-price {
-				font-size: 20px;
-				color: #ff6b6b;
-				font-weight: bold;
-				margin-bottom: 15px;
-			}
-
-			.model-features {
-				margin-bottom: 20px;
-			}
-
-			.feature-item {
-				display: flex;
-				align-items: center;
-				margin-bottom: 10px;
-				color: #666;
-			}
-
-			.feature-item i {
-				margin-right: 10px;
-				color: #4ecdc4;
-				width: 20px;
-			}
-
-			.scroll-indicator {
-				text-align: center;
-				margin-top: 20px;
-				color: #666;
-			}
-
-			.scroll-indicator i {
-				margin: 0 10px;
-				color: #4ecdc4;
-			}
-
-			@media (max-width: 768px) {
-				.model-card {
-					flex: 0 0 260px;
-				}
-
-				.model-image {
-					height: 160px;
-				}
-			}
-
-			.navbar-brand {
-				display: flex;
-				align-items: center;
-				padding: 15px 0;
-			}
-
-			.navbar-brand .logo {
-				height: 40px;
-				margin-right: 10px;
-			}
-
-			.navbar-brand span {
-				font-size: 24px;
-				font-weight: 600;
-				color: #333;
-			}
-
-			@media (max-width: 768px) {
-				.navbar-brand .logo {
-					height: 30px;
-				}
-
-				.navbar-brand span {
-					font-size: 20px;
-				}
-			}
-		</style>
-
 		<script>
 			document.addEventListener('DOMContentLoaded', function() {
 				const wrapper = document.querySelector('.models-scroll-wrapper');
-				const leftArrow = document.querySelector('.fa-chevron-left');
-				const rightArrow = document.querySelector('.fa-chevron-right');
+				const prevBtn = document.querySelector('.prev-btn');
+				const nextBtn = document.querySelector('.next-btn');
 
-				leftArrow.addEventListener('click', () => {
+				prevBtn.addEventListener('click', () => {
 					wrapper.scrollBy({
 						left: -300,
 						behavior: 'smooth'
 					});
 				});
 
-				rightArrow.addEventListener('click', () => {
+				nextBtn.addEventListener('click', () => {
 					wrapper.scrollBy({
 						left: 300,
 						behavior: 'smooth'
@@ -720,7 +619,6 @@
 			});
 		</script>
 
-		
 		<!--blog start -->
 		<section id="blog" class="blog">
 			<div class="container">
@@ -905,6 +803,76 @@
         <!--Custom JS-->
         <script src="assets/js/custom.js"></script>
         
+        <script>
+            // Initialize cart
+            let cart = [];
+            
+            function addToCart(productName, price) {
+                // Add item to cart
+                cart.push({
+                    name: productName,
+                    price: price
+                });
+                
+                // Update cart count
+                updateCartCount();
+                
+                // Update cart dropdown
+                updateCartDropdown();
+                
+                // Show success message
+                alert(`${productName} has been added to your cart!`);
+            }
+            
+            function updateCartCount() {
+                const badge = document.querySelector('.badge');
+                if (badge) {
+                    badge.textContent = cart.length;
+                }
+            }
+            
+            function updateCartDropdown() {
+                const cartList = document.querySelector('.cart-list');
+                if (!cartList) return;
+                
+                // Clear existing items except the total
+                const totalItem = cartList.querySelector('.total');
+                cartList.innerHTML = '';
+                
+                // Add cart items
+                cart.forEach((item, index) => {
+                    const li = document.createElement('li');
+                    li.className = 'single-cart-list';
+                    li.innerHTML = `
+                        <a href="#" class="photo"><img src="assets/images/features/f${index + 1}.jpg" class="cart-thumb" alt="${item.name}" /></a>
+                        <div class="cart-list-txt">
+                            <h6><a href="#">${item.name}</a></h6>
+                            <p>1 x - <span class="price">$${item.price.toFixed(2)}</span></p>
+                        </div>
+                        <div class="cart-close" onclick="removeFromCart(${index})">
+                            <span class="lnr lnr-cross"></span>
+                        </div>
+                    `;
+                    cartList.appendChild(li);
+                });
+                
+                // Add total
+                const total = cart.reduce((sum, item) => sum + item.price, 0);
+                const totalLi = document.createElement('li');
+                totalLi.className = 'total';
+                totalLi.innerHTML = `
+                    <span>Total: $${total.toFixed(2)}</span>
+                    <button class="btn-cart pull-right" onclick="window.location.href='#'">view cart</button>
+                `;
+                cartList.appendChild(totalLi);
+            }
+            
+            function removeFromCart(index) {
+                cart.splice(index, 1);
+                updateCartCount();
+                updateCartDropdown();
+            }
+        </script>
     </body>
 	
 </html>
