@@ -1,113 +1,73 @@
-# PulsyDrive - Smart Mobility Solutions
+# Welcome to your Lovable project
 
-PulsyDrive is a modern, responsive website showcasing smart and affordable mobility solutions. The platform features a range of innovative products designed to enhance independence and quality of life for users.
+## Project info
 
-## Features
+**URL**: https://lovable.dev/projects/5cc74e0a-dfce-4e7a-9068-80e76f71ab68
 
-- **Responsive Design**: Fully responsive layout that works seamlessly across all devices
-- **Modern UI**: Clean and intuitive user interface with smooth animations
-- **Product Showcase**: Interactive product comparison and detailed specifications
-- **Blog Section**: Latest news and updates about mobility solutions
-- **Contact Information**: Easy access to support and contact details
+## How can I edit this code?
 
-## Products
+There are several ways of editing your application.
 
-### PulsyPro
-- Voice-controlled mobility solution
-- Advanced features and premium comfort
-- Extended battery life
-- Price: $1,999.00
+**Use Lovable**
 
-### PulsyGo
-- Universal power kit for manual wheelchairs
-- Easy installation
-- Powerful performance
-- Price: $1,499.00
+Simply visit the [Lovable Project](https://lovable.dev/projects/5cc74e0a-dfce-4e7a-9068-80e76f71ab68) and start prompting.
 
-### PulsyLite
-- Eco-friendly solar-powered solution
-- Lightweight and efficient design
-- Environmentally conscious
-- Price: $1,299.00
+Changes made via Lovable will be committed automatically to this repo.
 
-### PulsyKit
-- Customizable mobility solutions
-- Modular design
-- Tailored to specific needs
-- Custom pricing
+**Use your preferred IDE**
 
-## Technologies Used
+If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
 
-- HTML5
-- CSS3
-- JavaScript
-- Bootstrap
-- Font Awesome
-- jQuery
-- Owl Carousel
+The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
 
-## Getting Started
+Follow these steps:
 
-1. Clone the repository:
-```bash
-git clone https://github.com/yourusername/pulsydrive.git
+```sh
+# Step 1: Clone the repository using the project's Git URL.
+git clone <YOUR_GIT_URL>
+
+# Step 2: Navigate to the project directory.
+cd <YOUR_PROJECT_NAME>
+
+# Step 3: Install the necessary dependencies.
+npm i
+
+# Step 4: Start the development server with auto-reloading and an instant preview.
+npm run dev
 ```
 
-2. Navigate to the project directory:
-```bash
-cd pulsydrive
-```
+**Edit a file directly in GitHub**
 
-3. Open `index.html` in your web browser to view the website.
+- Navigate to the desired file(s).
+- Click the "Edit" button (pencil icon) at the top right of the file view.
+- Make your changes and commit the changes.
 
-## Project Structure
+**Use GitHub Codespaces**
 
-```
-pulsydrive/
-├── assets/
-│   ├── css/
-│   │   ├── style.css
-│   │   ├── responsive.css
-│   │   └── bootsnav.css
-│   ├── js/
-│   │   ├── custom.js
-│   │   └── bootsnav.js
-│   ├── images/
-│   └── logo/
-├── index.html
-└── README.md
-```
+- Navigate to the main page of your repository.
+- Click on the "Code" button (green button) near the top right.
+- Select the "Codespaces" tab.
+- Click on "New codespace" to launch a new Codespace environment.
+- Edit files directly within the Codespace and commit and push your changes once you're done.
 
-## Browser Support
+## What technologies are used for this project?
 
-- Chrome (latest)
-- Firefox (latest)
-- Safari (latest)
-- Edge (latest)
-- Opera (latest)
+This project is built with:
 
-## Contributing
+- Vite
+- TypeScript
+- React
+- shadcn-ui
+- Tailwind CSS
 
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+## How can I deploy this project?
 
-## Contact
+Simply open [Lovable](https://lovable.dev/projects/5cc74e0a-dfce-4e7a-9068-80e76f71ab68) and click on Share -> Publish.
 
-- Email: support@pulsydrive.com
-- Phone: +1 (555) 123-4567
-- WhatsApp: +1 (555) 987-6543
-- Address: 123 Mobility Way, Suite 100, San Francisco, CA 94105
+## Can I connect a custom domain to my Lovable project?
 
-## License
+Yes, you can!
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
 
-## Acknowledgments
-
-- Bootstrap for the responsive framework
-- Font Awesome for the icons
-- Owl Carousel for the slider functionality
-- All contributors who have helped shape this project 
+Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
